@@ -21,9 +21,7 @@ DEVICE_PATH := device/fsl/cuboxi4pro
 # media config
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf \
-    $(DEVICE_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(DEVICE_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    $(DEVICE_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml
+    $(DEVICE_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # set build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \

@@ -15,7 +15,7 @@
 #
 
 # Use common cubox-i parts
--include device/fsl/cuboxi-common/BoardCommonConfig.mk
+include device/fsl/cuboxi-common/BoardCommonConfig.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := cuboxi,cuboxi4pro
