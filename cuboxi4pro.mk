@@ -23,5 +23,5 @@ $(call inherit-product, device/fsl/cuboxi4pro/device.mk)
 PRODUCT_NAME := cuboxi4pro
 PRODUCT_DEVICE := cuboxi4pro
 PRODUCT_BRAND := Freescale
-PRODUCT_MODEL := cuboxi4pro
+PRODUCT_MODEL := CuBox-i4pro
 PRODUCT_MANUFACTURER := Freescale
