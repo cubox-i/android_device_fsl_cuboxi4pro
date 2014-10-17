@@ -14,18 +14,13 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/fsl/cuboxi-common/common.mk)
-
 DEVICE_PATH := device/fsl/cuboxi4pro
 
 # media config
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES := \
     $(DEVICE_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf \
     $(DEVICE_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
     $(DEVICE_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(DEVICE_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
-# set build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Freescale/cuboxi4pro/cuboxi4pro:4.4.4/KTU84P/eng.humberos.20141010.142909:userdebug/dev-keys \
-    PRIVATE_BUILD_DESC="cuboxi4pro-userdebug 4.4.4 KTU84P eng.humberos.20141010.142909 dev-keys"
+$(call inherit-product, device/fsl/cuboxi-common/common.mk)

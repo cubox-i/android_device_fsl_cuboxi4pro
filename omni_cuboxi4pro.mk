@@ -15,13 +15,25 @@
 #
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit Omni GSM telephony parts
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/fsl/cuboxi4pro/device.mk)
 
-PRODUCT_NAME := cuboxi4pro
+# set build fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES := \
+    BUILD_FINGERPRINT=Freescale/cuboxi4pro/cuboxi4pro:4.4.4/KTU84P/eng.humberos.20141010.142909:userdebug/dev-keys \
+    PRIVATE_BUILD_DESC="cuboxi4pro-userdebug 4.4.4 KTU84P eng.humberos.20141010.142909 dev-keys"
+
+# product board
+PRODUCT_NAME := omni_cuboxi4pro
 PRODUCT_DEVICE := cuboxi4pro
-PRODUCT_BRAND := Freescale
 PRODUCT_MODEL := CuBox-i4pro
+PRODUCT_BRAND := Freescale
 PRODUCT_MANUFACTURER := Freescale

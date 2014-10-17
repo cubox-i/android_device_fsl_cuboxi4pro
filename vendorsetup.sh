@@ -14,5 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo cuboxi4pro-eng
-add_lunch_combo cuboxi4pro-user
+add_lunch_combo omni_cuboxi4pro-userdebug

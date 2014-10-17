@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cuboxi4pro.mk
+    $(LOCAL_DIR)/omni_cuboxi4pro.mk
 

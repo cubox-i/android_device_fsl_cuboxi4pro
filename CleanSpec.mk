@@ -49,3 +49,7 @@ $(call add-clean-step, find $(PRODUCT_OUT) -name "*.apk" | xargs rm)
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
 # ************************************************
 $(call add-clean-step, rm -rf $(TARGET_OUT)/build.prop)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/SPL)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/u-boot.img)
+$(call add-clean-step, find $(PRODUCT_OUT) -name "*.cpio" | xargs rm)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/uImage)
