@@ -13,12 +13,6 @@
   },
   {
     "remote":       "cubox-i",
-    "repository":   "android_device_fsl-proprietary",
-    "target_path":  "device/fsl-proprietary",
-    "revision":     "omni-4.4"
-  },
-  {
-    "remote":       "cubox-i",
     "repository":   "android_kernel_fsl_imx",
     "target_path":  "kernel/fsl/imx",
     "revision":     "omni-4.4"
